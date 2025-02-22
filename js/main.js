@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(mensaje);
 
     // Validar que el teléfono tenga solo números (error: comparación con == en vez de ===)
-    if (isNaN(telefono) == true) {
+    if (Number.isNaN(Number(telefono))) {
       alert('El teléfono debe contener solo números');
     }
 
