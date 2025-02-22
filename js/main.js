@@ -32,15 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Validar que el teléfono tenga solo números (error: comparación con == en vez de ===)
     if (Number.isNaN(Number(telefono))) {
-        const errorMensaje = document.createElement("p");
-        errorMensaje.innerText = "El teléfono debe contener solo números";
-        errorMensaje.style.color = "red";
-        document.body.appendChild(errorMensaje);
-    }
-
-    // Código muerto (una función que nunca se usa)
-    function saludo() {
-      console.log('Hola! Esto nunca se ejecutará');
+      alert('El teléfono debe contener solo números');
     }
 
     // Limpiar el formulario
